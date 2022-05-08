@@ -5,7 +5,7 @@ import useSWR from 'swr';
 
 
 
-const calc = () => {
+const Calc = () => {
     const [message, setMessage] = useState('');
     const [input, setInput] = useState('');
     const [data, setData] = usePersist<string[]>('calc-history', []);
@@ -97,4 +97,4 @@ function isFuncData(arg: any): arg is funcDataType {
 }
 
 
-export default calc;
+export default Calc;
